@@ -1,5 +1,8 @@
+import os
 from scholarly import scholarly
 from pandas import DataFrame
+from os.path import dirname
+ROOT_DIR = dirname(dirname(os.path.realpath(__file__)))
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 ### Define parameters.
@@ -21,19 +24,19 @@ search_results = []
 
 ## Iterate over queries.
 for query in queries:
-    
+
     print('Performing query: %s' %query)
-    
+
     ## Initialize generator object.
     G = scholarly.search_pubs(query, patents=False, year_low=2006)
 
     ## Iterate over search results.
     for result in G:
-        
+
         ## Append hit.
         try: search_results.append(result.bib)
         except: print(result)
-            
+
 ## Convert to DataFrame.
 search_results = DataFrame(search_results)
 
@@ -48,4 +51,5 @@ search_results['author'] = search_results.author.apply(lambda x: ', '.join(x))
 search_results = search_results.drop_duplicates()
 
 ## Save to disk.
-search_results.to_csv('search_results.tsv', sep='\t', index=False)
+f = os.path.join(ROOT_DIR, 'raw', 'scholar_results_raw.tsv')
+search_results.to_csv(f, sep='\t', index=False)
