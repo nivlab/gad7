@@ -27,7 +27,7 @@ An initial list of articles were found on Google Scholar using various permutati
 
 Each publication was then manually inspected to confirm that the authors had reported making the reproduction error (i.e. using "not at all sure" instead of "not at all" when administering the GAD-7). These inspections were performed to prevent false positives (e.g. authors administered GAD-7, but the phase "not at all sure" appeared elsewhere in the publication). Two coders, Sam Zorowitz (sz) and Gina Choe (gc), performed the inspections.
 
-The resulting annotated list of publications can be found in [scholar_results_annotated.tsv](raw/scholar_results_annotated.tsv). The variable `error` indicates if the corresponding publication made the error (Yes = 1, No = 0). The variable `language` indicates the language that the GAD-7 was administered in.
+The resulting annotated list of publications can be found in [scholar_results_annotated.tsv](annotated/scholar_results_annotated.tsv). The variable `error` indicates if the corresponding publication made the error (Yes = 1, No = 0). The variable `language` indicates the language that the GAD-7 was administered in.
 
 ## Literature Review - APA PsychInfo
 
