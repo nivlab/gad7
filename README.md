@@ -1,6 +1,6 @@
 ## A Recurring Reproduction Error in the Administration of the Generalized Anxiety Disorder Scale
 
-This repository contains the materials associated with Zorowitz et al. (2020), _A Recurring Reproduction Error in the Administration of the Generalized Anxiety Disorder Scale_.
+This repository contains the materials associated with Zorowitz et al. (2021), _A Recurring Reproduction Error in the Administration of the Generalized Anxiety Disorder Scale_.
 
 Please see the remainder of this README file for details on the literature reviews conducted as part of this letter.
 
